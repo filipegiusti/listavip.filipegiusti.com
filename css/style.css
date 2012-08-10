@@ -81,6 +81,7 @@ td { vertical-align: top; }
 
 textarea {
   width: 475px;
+  height: 300px;
 }
 
 #names-input {
