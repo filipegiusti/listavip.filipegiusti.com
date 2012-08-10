@@ -71,17 +71,21 @@ td { vertical-align: top; }
 
 
 /* ===== Primary Styles ========================================================
-   Author:
+   Author: Filipe Giusti
    ========================================================================== */
 
+#main {
+  margin: auto;
+  width: 980px;
+}
 
+textarea {
+  width: 475px;
+}
 
-
-
-
-
-
-
+#names-input {
+  margin-right: 18px;
+}
 
 
 /* =============================================================================
@@ -123,11 +127,4 @@ td { vertical-align: top; }
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
-}
-
-/* Lista VIP */
-
-#main {
-  margin: auto;
-  width: 980px;
 }
