@@ -14,8 +14,9 @@ $(function () {
       var name_parts = name.split(" ");
       return $.map(name_parts, function (name_part) { return name_part.slice(0,1).toUpperCase() + name_part.slice(1) }).join(" ") ;
     });
+    sorted_names = clean_names.sort();
 
-    $names_output.val(clean_names.join("\n"));
+    $names_output.val(sorted_names.join("\n"));
   };
 
   $names_input.bind('paste change keypress cut input', updateOutput);
