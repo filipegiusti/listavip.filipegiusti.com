@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="no-dom-ready">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -25,6 +25,19 @@
     <div id='main' role='main'>
         <h1>Lista VIP</h1>
         <h2>Pequena ferramenta para auxiliar os promoters do mundo a fora.</h2>
+        <button type="button" id="tools-button">Mais ferramentas</button>
+        <div id="tools" class="inactive">
+            <a id="fb-inviter" class="bookmarklet" title="Facebook Inviter bookmarklet" onclick="alert('Arraste o botão até sua barra de favoritos | Drag the button to your Bookmarks bar'); return false;" href="javascript:void((function(){var%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://listavip.filipegiusti.com/bookmarklet.js');document.body.appendChild(e)})());">Facebook Inviter</a>
+            <p>
+                1. Arraste o botão acima até a barra de favoritos ou clique com o botão direito no botão e escolha a opção "Adicionar link aos favoritos...".
+                <br />
+                2. Vá até a pagina do evento no Facebook e clique em "Convidar amigos".
+                <br />
+                3. Rode até o final da lista de amigos.
+                <br />
+                4. Clique no link dos favoritos "Facebook Inviter" .
+            </p>
+        </div>
 	<form>
             <textarea name="input"  id="names-input"></textarea><textarea name="output" id="names-output" readonly="readonly"></textarea>
         </form>

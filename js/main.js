@@ -22,3 +22,13 @@ $(function () {
   $names_input.bind('paste change keypress cut input', updateOutput);
 });
 
+$(function() {
+  $('#tools-button').click(function () {
+    $('#tools').toggleClass('inactive');
+  });
+});
+
+$(function() {
+  $('html').removeClass('no-dom-ready');
+});
+
